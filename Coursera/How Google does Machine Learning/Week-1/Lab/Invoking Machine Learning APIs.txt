@@ -1,0 +1,34 @@
+Enable APIs
+Ensure the Cloud Source Repositories API is enabled: 
+https://console.cloud.google.com/apis/library/sourcerepo.googleapis.com/?q=Repositories
+
+Launch Cloud Datalab
+1. Open Cloud Shell. The cloud shell icon is at the top right of the Google Cloud Platform web console
+2. gcloud compute zones list
+3. datalab create mydatalabvm --zone <ZONE>
+4. Look back at Cloud Shell, and follow any prompts. If asked for a ssh passphrase, just hit return (for no passphrase).
+5. If necessary, wait for Datalab to finish launching. Datalab is ready when you see a message prompting you to do a "Web Preview".
+6. Click on the Web Preview icon on the top-right corner of the Cloud Shell ribbon. Switch to port 8081.
+
+Clone repo within Datalab
+1. In Cloud Datalab home page (browser), navigate into "notebooks" and add a new notebook using the icon on the top left.
+2. Rename this notebook as ‘recheckout'.
+3. In the new notebook, enter the following commands in the cell, and click on Run (on the top navigation bar) to run the commands:
+%bash
+git clone https://github.com/GoogleCloudPlatform/training-data-analyst
+rm -rf training-data-analyst/.git
+4. Confirm that you have cloned the repo by going back to Datalab browser, and ensure you see the training-data-analyst directory. All the files for all labs throughout this course are available in this directory. 
+
+Enable APIs and Get API key
+1. From the GCP console menu, select APIs and services and select Library
+2. In the search box, type vision to find the Google Cloud Vision API and click on the hyperlink.
+3. Click Enable if necessary
+4. Follow the same process to enable Translate API, Speech API, and Natural Language APIs.
+5. From the GCP console menu, select APIs and services and select Credentials. 
+6. If you do not already have an API key, click the Create credentials button and select API key. Once created, click close. You will need this API key in the notebook later.
+
+Invoke ML APIs from Datalab
+1. In the Datalab browser, navigate to training-data-analyst > courses > machine_learning > deepdive > 01_googleml > mlapis.ipynb
+2. Read the commentary, then run the Python snippets (Use Shift+Enter to run each piece of code) in the cell, step by step. Make sure to insert your API Key in the first Python cell.
+
+

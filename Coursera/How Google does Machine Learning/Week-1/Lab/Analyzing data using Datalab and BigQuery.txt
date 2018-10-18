@@ -1,0 +1,75 @@
+Ensure the Cloud Source Repositories API is enabled: 
+https://console.cloud.google.com/apis/library/sourcerepo.googleapis.com/?q=Repositories
+
+Launch Cloud Datalab
+1. Open Cloud Shell. The cloud shell icon is at the top right of the Google Cloud Platform web console
+2. gcloud compute zones list
+3. datalab create mydatalabvm --zone <ZONE>
+
+Invoke BigQuery
+1. Navigate to the BigQuery console by selecting BigQuery from the top-left-corner ("hamburger") menu.
+2. In the BigQuery Console, click on Compose Query. Then, select Show Options and ensure that the Legacy SQL menu is NOT checked (we will be using Standard SQL).
+3. In the query textbox, type:
+#standardSQL
+SELECT
+  departure_delay,
+  COUNT(1) AS num_flights,
+  APPROX_QUANTILES(arrival_delay, 5) AS arrival_delay_quantiles
+FROM
+  `bigquery-samples.airline_ontime_data.flights`
+GROUP BY
+  departure_delay
+HAVING
+  num_flights > 100
+ORDER BY
+  departure_delay ASC
+4. Look back at Cloud Shell, and follow any prompts. If asked for a ssh passphrase, just hit return (for no passphrase).
+5. Can you write a query to find the airport pair (departure and arrival airport) that had the maximum number of flights between them?
+#standardSQL
+SELECT
+  departure_airport,
+  arrival_airport,
+  COUNT(1) AS num_flights
+FROM
+  `bigquery-samples.airline_ontime_data.flights`
+GROUP BY
+  departure_airport,
+  arrival_airport
+ORDER BY
+  num_flights DESC
+LIMIT
+  10
+
+Draw graphs in Cloud Datalab
+1. If necessary, wait for Datalab to finish launching. Datalab is ready when you see a message prompting you to do a "Web Preview".
+2. Click on the Web Preview icon on the top-right corner of the Cloud Shell ribbon. Switch to port 8081.
+3. In Cloud Datalab home page (browser), navigate into notebooks. You should now be in datalab/notebooks/
+4. Start a new notebook by clicking on the +Notebook icon. Rename the notebook to be flights.
+5. In a cell in Datalab, type the following, then click Run
+query="""
+SELECT
+  departure_delay,
+  COUNT(1) AS num_flights,
+  APPROX_QUANTILES(arrival_delay, 10) AS arrival_delay_deciles
+FROM
+  `bigquery-samples.airline_ontime_data.flights`
+GROUP BY
+  departure_delay
+HAVING
+  num_flights > 100
+ORDER BY
+  departure_delay ASC
+"""
+
+import google.datalab.bigquery as bq
+df = bq.Query(query).execute().result().to_dataframe()
+df.head()
+6. In the next cell in Datalab, type the following, then click Run
+import pandas as pd
+percentiles = df['arrival_delay_deciles'].apply(pd.Series)
+percentiles = percentiles.rename(columns = lambda x : str(x*10) + "%")
+df = pd.concat([df['departure_delay'], percentiles], axis=1)
+df.head()
+7. In the next cell in Datalab, type the following, then click Run
+without_extremes = df.drop(['0%', '100%'], 1)
+without_extremes.plot(x='departure_delay', xlim=(-30,50), ylim=(-50,50));

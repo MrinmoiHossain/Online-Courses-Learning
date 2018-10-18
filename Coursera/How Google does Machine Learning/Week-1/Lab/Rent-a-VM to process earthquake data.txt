@@ -1,0 +1,11 @@
+Ingest USGS data
+1. git clone https://github.com/GoogleCloudPlatform/training-data-analyst
+2. cd training-data-analyst/courses/machine_learning/deepdive/01_googleml/earthquakes
+3. less ingest.sh
+4. bash ingest.sh
+5. head earthquakes.csv
+
+Transform the data
+1. bash install_missing.sh
+2. ./transform.py
+3. ls -l
