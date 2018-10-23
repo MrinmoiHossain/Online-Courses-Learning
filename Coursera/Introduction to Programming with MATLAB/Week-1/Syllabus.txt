@@ -1,0 +1,8 @@
+Lesson 1: Introduction to MATLAB
+Lesson 2: Matrices and Operators
+Lesson 3: Functions
+Lesson 4: Programmer’s Toolbox
+Lesson 5: Selection
+Lesson 6: Loops
+Lesson 7: Data Types
+Lesson 8: File Input/Output
