@@ -68,8 +68,8 @@ cur = conn.cursor()
 baseurl = "http://mbox.dr-chuck.net/sakai.devel/"
 
 cur.execute('''CREATE TABLE IF NOT EXISTS Messages
-    (id INTEGER UNIQUE, email TEXT, sent_at TEXT,
-     subject TEXT, headers TEXT, body TEXT)''')
+            (id INTEGER UNIQUE, email TEXT, sent_at TEXT, subject TEXT, headers TEXT, body TEXT)
+            ''')
 
 # Pick up where we left off
 start = None
@@ -83,7 +83,8 @@ try:
 except:
     start = 0
 
-if start is None : start = 0
+if start is None:
+    start = 0
 
 many = 0
 count = 0
