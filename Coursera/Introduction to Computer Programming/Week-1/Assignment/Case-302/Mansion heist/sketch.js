@@ -1,24 +1,21 @@
 /*
 The case of the slippery Minsky brothers
-Stage 1: Gates Bank
+Stage 2: Gates’ Mansion
 
 Officer: 1608905
-CaseNum: 302-0-16526232-1608905
+CaseNum: 302-1-40656587-1608905
 
-The Slippery Minsky brothers are notorious cat burglars.
-I’ve been trying to catch them for years but they are masters of escape, hence their nickname.
-I’ve had a tip off that Sergey Minsky is breaking into the Gates Bank tonight.
-Head down there and catch him in the act.
+One Minsky behind bars, but two more to go. Larry Minsky has just been spotted breaking and entering the Gates’ Mansion. Get there as fast as you can and intercept.
 
 
-- Edit startX to alter the starting position of the spotlight.
+- Edit startX and startY to alter the starting position of the spotlight.
 
-- Edit endX to stop the spotlight when it reaches the target.
+- Edit endX and endY to stop the spotlight when it reaches the target.
 
-- Make the spotlight move perfectly from you towards Sergy by adjusting the increments of x and y.
+- Make the spotlight move perfectly from you towards Larry by adjusting the increments of x and y.
   If you get everything correct then it will stop over the target.
 
-- Adjust x and y using
+- Adjust x and y using:
 
  * "+=" or "+"
  * "-=" or "-"
@@ -26,49 +23,56 @@ Head down there and catch him in the act.
 */
 
 // edit the variables below to change where the spotlight starts and finishes
-var startX = 306;
-var endX = 526;
+
+var startX = 468;
+var endX = 680;
+
+var startY = 490;
+var endY = 286;
 
 // other variables, you don't need to change these
 var img, spotlight_image;
-
 var x;
 var y;
 
-	function preload()
-	{
-		img = loadImage('scene.png');
-		spotlight_image = loadImage('spotlight.png');
-	}
+function preload()
+{
+	img = loadImage('scene.png');
+	spotlight_image = loadImage('spotlight.png');
+}
 
 function setup()
 {
 	createCanvas(img.width, img.height);
 
-	//Initialize x with the start value
-    x = 306;
+	//Initialize x and y with the start values
+    x = 468;
+    y = 490;
 }
 
 function draw()
 {
 	image(img, 0, 0);
 
-	// alter the variable x below to animate the spotlight
+	// alter the variables x and y below to animate the spotlight
     x += 1;
+    y -= 1;
+    
 
 	////////// DO NOT CHANGE ANYTHING BELOW /////////////
 
 	//stop the spotlight if it's near enough to endx and endy
-	if (abs(endX - x) < 30)
+	if (abs(endX - x) < 100 && abs(endY - y) < 100)
 	{
 		x = endX;
+		y = endY;
 	}
-
-	y = 114;
 
 	//stop the spotlight if it goes off of the screen
 	x = min(x, 960);
+	y = min(y, 945);
 	x = max(x, 0);
+	y = max(y, 0);
 
 	var spotlightSize = 180;
 
