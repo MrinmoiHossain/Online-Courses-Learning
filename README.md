@@ -4,7 +4,7 @@
 
 ### Programming Language
 * Python Programming Language
-    * Python for Everody - University of Michigan
+    * <b> Python for Everody - University of Michigan </b>
 	* Programming for Everybody (Getting Started with Python)
 	* Python Data Structures
 	* Using Python to Access Web Data
