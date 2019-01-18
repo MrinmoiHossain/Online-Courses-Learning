@@ -13,7 +13,12 @@
     * Data Visualization with Python
 
 ### Machine Learning
-- 
+* <b>Machine Learning with TensorFlow on Google Cloud Platform -     Google Cloud</b>
+    * How Google does Machine Learning
+    * Launching into Machine Learning
+    * Intro to TensorFlow
+    * Feature Engineering
+    * Art and Science of Machine Learning
 
 ### Programming Language
 * Python Programming Language
@@ -37,6 +42,9 @@
     * Mechanics of Materials II: Thin-Walled Pressure Vessels and Torsion
 
 ## Mathematics
+* <b>Calculus: Single Variable - University of Pennsylvania</b>
+    * Calculus: Single Variable Part 1 - Functions
+    * Calculus: Single Variable Part 2 - Differentiation
 
 ## Robotics
 * <b>An Introduction to Programming the Internet of Things (IOT) - University of California</b>
