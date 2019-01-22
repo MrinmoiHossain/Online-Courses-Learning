@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e8172bd2-7a32-4b36-a4de-640f4aef84cc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="9267107f-4041-4839-8730-6d8b9133af0d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Getting Started with Go/Week-4/Assignment/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Getting Started with Go/Week-4/Assignment/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,14 +12,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Go File" />
-      </list>
-    </option>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="GOROOT" path="C:\Go" />
   <component name="Git.Settings">
@@ -27,9 +21,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/makejson.go" />
-        <option value="$PROJECT_DIR$/read(1).go" />
-        <option value="$PROJECT_DIR$/read.go" />
+        <option value="$PROJECT_DIR$/func.go" />
       </list>
     </option>
   </component>
@@ -50,8 +42,8 @@
         <subPane>
           <expand>
             <path>
-              <item name="Assignment" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Assignment" type="462c0819:PsiDirectoryNode" />
+              <item name="Exercise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Exercise" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -60,11 +52,10 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Functions, Methods, and Interfaces in Go/Week-1/Exercise" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Assignment" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -83,7 +74,7 @@
   <component name="ToolWindowManager">
     <frame x="450" y="34" width="1400" height="1000" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20746268" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17313433" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -96,7 +87,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3298731" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.2237601" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -108,19 +99,10 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/makejson.go">
+    <entry file="file://$PROJECT_DIR$/func.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/read(1).go" />
-    <entry file="file://$PROJECT_DIR$/read(1).go" />
-    <entry file="file://$PROJECT_DIR$/read.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
-          <caret line="39" column="36" selection-start-line="39" selection-start-column="36" selection-end-line="39" selection-end-column="36" />
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
