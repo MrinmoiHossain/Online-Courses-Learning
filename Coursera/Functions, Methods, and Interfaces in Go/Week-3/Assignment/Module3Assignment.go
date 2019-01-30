@@ -29,29 +29,29 @@ func storeData(s []string){
 	obj := new(animal)
 
 	switch s[0]{
-	case "cow":
-		obj.food = "grass"
-		obj.locomotion = "walk"
-		obj.spoken = "moo"
+		case "cow":
+			obj.food = "grass"
+			obj.locomotion = "walk"
+			obj.spoken = "moo"
 
-	case "bird":
-		obj.food = "worms"
-		obj.locomotion = "fly"
-		obj.spoken = "poop"
+		case "bird":
+			obj.food = "worms"
+			obj.locomotion = "fly"
+			obj.spoken = "poop"
 
-	case "snake":
-		obj.food = "worms"
-		obj.locomotion = "fly"
-		obj.spoken = "poop"
+		case "snake":
+			obj.food = "mice"
+			obj.locomotion = "slither"
+			obj.spoken = "hsss"
 	}
 
 	switch s[1]{
-	case "eat":
-		obj.Eat()
-	case "speak":
-		obj.Speak()
-	case "move":
-		obj.Move()
+		case "eat":
+			obj.Eat()
+		case "speak":
+			obj.Speak()
+		case "move":
+			obj.Move()
 	}
 }
 
