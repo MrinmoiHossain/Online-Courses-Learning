@@ -28,11 +28,15 @@
         * Using Python to Access Web Data
         * Using Databases with Python
         * Capstone: Retrieving, Processing, and Visualizing Data with Python
+
 * Go Programming Language
     * <b>Programming with Google Go - University of California, Irvine</b>
         * Getting Started with Go
+        * Functions, Methods, and Interfaces in Go
+
 * MATLAB Programming Language
     * <b>Introduction to Programming with MATLAB - Vanderbilt University</b>
+
 * JavaScript Programming Language
     * <b>Introduction to Computer Programming - University of London</b>
 
@@ -52,3 +56,4 @@
     * The Arduino Platform and C Programming
     * Interfacing with the Arduino
     * The Raspberry Pi Platform and Python Programming for the Raspberry Pi
+    * Interfacing with the Raspberry Pi
