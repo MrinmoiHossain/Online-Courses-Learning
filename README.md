@@ -13,7 +13,7 @@
     * Data Visualization with Python
 
 ### Machine Learning
-* <b>Machine Learning with TensorFlow on Google Cloud Platform -     Google Cloud</b>
+* <b>Machine Learning with TensorFlow on Google Cloud Platform - Google Cloud</b>
     * How Google does Machine Learning
     * Launching into Machine Learning
     * Intro to TensorFlow
@@ -33,6 +33,7 @@
     * <b>Programming with Google Go - University of California, Irvine</b>
         * Getting Started with Go
         * Functions, Methods, and Interfaces in Go
+	* Concurrency in Go
 
 * MATLAB Programming Language
     * <b>Introduction to Programming with MATLAB - Vanderbilt University</b>
