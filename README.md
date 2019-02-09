@@ -41,6 +41,11 @@
 * JavaScript Programming Language
     * <b>Introduction to Computer Programming - University of London</b>
 
+### Operating System
+* <b>Open Source Software Development, Linux and Git - The Linux Foundation</b>
+    * Open Source Software Development Methods
+
+
 ## Mechanical Engineering
 * <b>Mechanics of Materials - Georgia Institute of Technology</b>
     * Mechanics of Materials I: Fundamentals of Stress & Strain and Axial Loading
