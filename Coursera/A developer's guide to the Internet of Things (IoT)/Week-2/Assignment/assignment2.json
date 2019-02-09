@@ -1,0 +1,237 @@
+[
+    {
+        "id": "4cb5edbf.1e2edc",
+        "type": "http in",
+        "z": "dbc4c772.c7cf",
+        "name": "/time",
+        "url": "/time",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 120,
+        "y": 100,
+        "wires": [
+            [
+                "b95d7870.ebceb"
+            ]
+        ]
+    },
+    {
+        "id": "599e44c4.bed3ec",
+        "type": "http response",
+        "z": "dbc4c772.c7cf",
+        "name": "HTTP Response",
+        "statusCode": "",
+        "headers": {},
+        "x": 1000.0000152587891,
+        "y": 188.7500057220459,
+        "wires": []
+    },
+    {
+        "id": "aca1a3dd.69b9f",
+        "type": "function",
+        "z": "dbc4c772.c7cf",
+        "name": "Setting HTTP Headers",
+        "func": "msg.headers = {\"content-type\" : \"application/json\"};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 770.2500114440918,
+        "y": 189.0000057220459,
+        "wires": [
+            [
+                "599e44c4.bed3ec"
+            ]
+        ]
+    },
+    {
+        "id": "b95d7870.ebceb",
+        "type": "function",
+        "z": "dbc4c772.c7cf",
+        "name": "curr timestamp",
+        "func": "var now = new Date();\n\nvar hours = now.getHours();\nvar minutes = now.getMinutes();\n\nif ( hours < 10 )\n{\n    hours = \"0\" + hours;\n}\n\nif ( minutes < 10 )\n{\n    minutes = \"0\" + minutes\n}\n\nmsg.payload = hours+\":\"+minutes;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 288,
+        "y": 146,
+        "wires": [
+            [
+                "beaedf82.4f0908",
+                "de0038.d991efc8"
+            ]
+        ]
+    },
+    {
+        "id": "beaedf82.4f0908",
+        "type": "template",
+        "z": "dbc4c772.c7cf",
+        "name": "JSON template",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "{\"time\" : \"{{payload}}\"}",
+        "x": 508.50000762939453,
+        "y": 145.75000476837158,
+        "wires": [
+            [
+                "aca1a3dd.69b9f"
+            ]
+        ]
+    },
+    {
+        "id": "4d1db63c.dff0e",
+        "type": "http in",
+        "z": "dbc4c772.c7cf",
+        "name": "/random",
+        "url": "/random",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 97,
+        "y": 211,
+        "wires": [
+            [
+                "4dfef298.1ba70c"
+            ]
+        ]
+    },
+    {
+        "id": "4dfef298.1ba70c",
+        "type": "random",
+        "z": "dbc4c772.c7cf",
+        "name": "",
+        "low": "1",
+        "high": "10",
+        "inte": "true",
+        "x": 253,
+        "y": 257,
+        "wires": [
+            [
+                "75ee7bd.1eb9384",
+                "9db74fda.73c38",
+                "cedd071e.fab8c"
+            ]
+        ]
+    },
+    {
+        "id": "75ee7bd.1eb9384",
+        "type": "template",
+        "z": "dbc4c772.c7cf",
+        "name": "JSON template",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "{\"random\" : {{payload}} }",
+        "x": 511.00000762939453,
+        "y": 258.2500057220459,
+        "wires": [
+            [
+                "aca1a3dd.69b9f"
+            ]
+        ]
+    },
+    {
+        "id": "82537dc5.5bcc08",
+        "type": "http in",
+        "z": "dbc4c772.c7cf",
+        "name": "/page",
+        "url": "/page",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 97,
+        "y": 515.2500076293945,
+        "wires": [
+            [
+                "71163fec.acc008"
+            ]
+        ]
+    },
+    {
+        "id": "9db74fda.73c38",
+        "type": "function",
+        "z": "dbc4c772.c7cf",
+        "name": "Caching random num",
+        "func": "flow.set('lastRandomNum', msg.payload);",
+        "outputs": "0",
+        "noerr": 0,
+        "x": 524.7500076293945,
+        "y": 333.25000762939453,
+        "wires": []
+    },
+    {
+        "id": "de0038.d991efc8",
+        "type": "function",
+        "z": "dbc4c772.c7cf",
+        "name": "Caching timestamp",
+        "func": "flow.set('lastServerTime', msg.payload);",
+        "outputs": "0",
+        "noerr": 0,
+        "x": 518.1250076293945,
+        "y": 74.00000381469727,
+        "wires": []
+    },
+    {
+        "id": "74b05057.f33d68",
+        "type": "template",
+        "z": "dbc4c772.c7cf",
+        "name": "Generate HTML",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "{{#lastServerTime}}\nTime last server time request received at {{lastServerTime}}\n{{/lastServerTime}}\n\n{{^lastServerTime}}\nNo server time requests have been received\n{{/lastServerTime}}\n\n<br/>\n{{#lastRandomNum}}\nLast random number request returned {{lastRandomNum}}, which was received at {{lastRandomNumTimestamp}}\n{{/lastRandomNum}}\n\n{{^lastRandomNum}}\nNo requests for random numbers have been received\n{{/lastRandomNum}}",
+        "x": 541.8750076293945,
+        "y": 514.0000076293945,
+        "wires": [
+            [
+                "599e44c4.bed3ec"
+            ]
+        ]
+    },
+    {
+        "id": "71163fec.acc008",
+        "type": "function",
+        "z": "dbc4c772.c7cf",
+        "name": "Get cached values",
+        "func": "// Get cached timestamp and random num\n\nvar lastServerTime = flow.get('lastServerTime');\nvar lastRandomNum = flow.get('lastRandomNum');\nvar lastRandomNumTimestamp = flow.get('lastRandomNumTimestamp');\n\nmsg.lastServerTime = lastServerTime;\nmsg.lastRandomNum = lastRandomNum;\nmsg.lastRandomNumTimestamp = lastRandomNumTimestamp;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 303.12500762939453,
+        "y": 515.2500076293945,
+        "wires": [
+            [
+                "74b05057.f33d68"
+            ]
+        ]
+    },
+    {
+        "id": "cedd071e.fab8c",
+        "type": "function",
+        "z": "dbc4c772.c7cf",
+        "name": "curr timestamp",
+        "func": "var now = new Date();\n\nvar hours = now.getHours();\nvar minutes = now.getMinutes();\n\nif ( hours < 10 )\n{\n    hours = \"0\" + hours;\n}\n\nif ( minutes < 10 )\n{\n    minutes = \"0\" + minutes\n}\n\nmsg.payload = hours+\":\"+minutes;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 278.12500762939453,
+        "y": 390.25000762939453,
+        "wires": [
+            [
+                "47c8b55a.1aaf9c"
+            ]
+        ]
+    },
+    {
+        "id": "47c8b55a.1aaf9c",
+        "type": "function",
+        "z": "dbc4c772.c7cf",
+        "name": "Caching random num timestamp",
+        "func": "flow.set('lastRandomNumTimestamp', msg.payload);\nreturn msg;",
+        "outputs": "0",
+        "noerr": 0,
+        "x": 584.375,
+        "y": 390.25,
+        "wires": []
+    }
+]
