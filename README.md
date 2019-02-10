@@ -30,10 +30,10 @@
         * Capstone: Retrieving, Processing, and Visualizing Data with Python
 
 * Go Programming Language
-    * <b>Programming with Google Go - University of California, Irvine</b>
-        * Getting Started with Go
-        * Functions, Methods, and Interfaces in Go
-	* Concurrency in Go
+    * <b>Programming with Google Go - University of California, Irvine - <a target="_blank" href="https://www.coursera.org/specializations/google-golang">Coursera</a></b>
+        * Getting Started with Go - <a target="_blank" href="https://www.coursera.org/learn/golang-getting-started">Coursera</a> - <a target="_blank" href="https://github.com/MrinmoiHossain/Online-Courses-Learning/tree/master/Coursera/Getting%20Started%20with%20Go">Github</a>
+        * Functions, Methods, and Interfaces in Go - <a target="_blank" href="https://www.coursera.org/learn/golang-functions-methods">Coursera</a> - <a target="_blank" href="https://github.com/MrinmoiHossain/Online-Courses-Learning/tree/master/Coursera/Functions%2C%20Methods%2C%20and%20Interfaces%20in%20Go">Github</a>
+	* Concurrency in Go - <a target="_blank" href="https://www.coursera.org/learn/golang-concurrency">Coursera</a> - <a target="_blank" href="https://github.com/MrinmoiHossain/Online-Courses-Learning/tree/master/Coursera/Concurrency%20in%20Go">Github</a>
 
 * MATLAB Programming Language
     * <b>Introduction to Programming with MATLAB - Vanderbilt University</b>
