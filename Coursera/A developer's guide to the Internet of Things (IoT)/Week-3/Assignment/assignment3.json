@@ -1,0 +1,92 @@
+[
+    {
+        "id": "fb7558a9.342d18",
+        "type": "inject",
+        "z": "13933bd1.4e5634",
+        "name": "Input",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "5",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 290,
+        "y": 260,
+        "wires": [
+            [
+                "75228701.e17718"
+            ]
+        ]
+    },
+    {
+        "id": "563d4cac.ac4d24",
+        "type": "debug",
+        "z": "13933bd1.4e5634",
+        "name": "OutputCPU",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "x": 840,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "fca65d64.1e911",
+        "type": "function",
+        "z": "13933bd1.4e5634",
+        "name": "OutputFunciton",
+        "func": "s = msg.payload;\ns = s.slice(5,9);\n\nvalue = parseFloat(s);\n\nmsg.payload = {\"d\" : {\"temp\" : value}};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 670,
+        "y": 280,
+        "wires": [
+            [
+                "563d4cac.ac4d24",
+                "f8246ff1.0fa95"
+            ]
+        ]
+    },
+    {
+        "id": "75228701.e17718",
+        "type": "exec",
+        "z": "13933bd1.4e5634",
+        "command": "vcgencmd",
+        "addpay": false,
+        "append": "measure_temp",
+        "useSpawn": "false",
+        "timer": "",
+        "oldrc": false,
+        "name": "Command",
+        "x": 480,
+        "y": 280,
+        "wires": [
+            [
+                "fca65d64.1e911"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "f8246ff1.0fa95",
+        "type": "wiotp out",
+        "z": "13933bd1.4e5634",
+        "authType": "d",
+        "qs": "true",
+        "qsDeviceId": "f8246ff1.0fa95",
+        "deviceKey": "",
+        "deviceType": "",
+        "deviceId": "",
+        "event": "event",
+        "format": "json",
+        "qos": "",
+        "name": "CloudSentData",
+        "x": 840,
+        "y": 360,
+        "wires": []
+    }
+]
