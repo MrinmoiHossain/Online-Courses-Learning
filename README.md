@@ -3,14 +3,14 @@
 ## Computer Science
 
 ### Data Science
-* <b>IBM Data Science Professional Certificate</b>
-    * What is Data Science?
-    * Open Source tools for Data Science
-    * Data Science Methodology
-    * Python for Data Science
-    * Databases and SQL for Data Science
-    * Data Analysis with Python
-    * Data Visualization with Python
+* <b>IBM Data Science Professional Certificate - <a target="_blank" href="https://www.coursera.org/specializations/ibm-data-science-professional-certificate">Coursera</a></b>
+    * What is Data Science? - <a target="_blank" href="https://www.coursera.org/learn/what-is-datascience">Coursera</a> - <a target="_blank" href="https://github.com/MrinmoiHossain/Online-Courses-Learning/tree/master/Coursera/What%20is%20Data%20Science">Github</a>
+    * Open Source tools for Data Science - <a target="_blank" href="https://www.coursera.org/learn/open-source-tools-for-data-science">Coursera</a> - <a target="_blank" href="https://github.com/MrinmoiHossain/Online-Courses-Learning/tree/master/Coursera/Open%20Source%20tools%20for%20Data%20Science">Github</a>
+    * Data Science Methodology - <a target="_blank" href="https://www.coursera.org/learn/data-science-methodology">Coursera</a> - <a target="_blank" href="https://github.com/MrinmoiHossain/Online-Courses-Learning/tree/master/Coursera/Data%20Science%20Methodology">Github</a>
+    * Python for Data Science - <a target="_blank" href="https://www.coursera.org/learn/python-for-applied-data-science">Coursera</a> - <a target="_blank" href="https://github.com/MrinmoiHossain/Online-Courses-Learning/tree/master/Coursera/Python%20for%20Data%20Science-IBM">Github</a>
+    * Databases and SQL for Data Science - <a target="_blank" href="https://www.coursera.org/learn/sql-data-science">Coursera</a> - <a target="_blank" href="https://github.com/MrinmoiHossain/Online-Courses-Learning/tree/master/Coursera/Databases%20and%20SQL%20for%20Data%20Science-IBM">Github</a>
+    * Data Analysis with Python - <a target="_blank" href="https://www.coursera.org/learn/data-analysis-with-python">Coursera</a> - <a target="_blank" href="https://github.com/MrinmoiHossain/Online-Courses-Learning/tree/master/Coursera/Data%20Analysis%20with%20Python-IBM">Github</a>
+    * Data Visualization with Python - <a target="_blank" href="https://www.coursera.org/learn/python-for-data-visualization">Coursera</a> - <a target="_blank" href="https://github.com/MrinmoiHossain/Online-Courses-Learning/tree/master/Coursera/Data%20Visualization%20with%20Python-IBM">Github</a>
 
 ### Machine Learning
 * <b>Machine Learning with TensorFlow on Google Cloud Platform - Google Cloud</b>
