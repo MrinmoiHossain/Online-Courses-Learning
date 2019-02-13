@@ -22,12 +22,12 @@
 
 ### Programming Language
 * Python Programming Language
-    * <b>Python for Everody - University of Michigan</b>
-        * Programming for Everybody (Getting Started with Python)
-        * Python Data Structures
-        * Using Python to Access Web Data
-        * Using Databases with Python
-        * Capstone: Retrieving, Processing, and Visualizing Data with Python
+    * <b>Python for Everody - University of Michigan - <a target="_blank" href="https://www.coursera.org/specializations/python">Coursera</a></b>
+        * Programming for Everybody (Getting Started with Python) - <a target="_blank" href="https://www.coursera.org/learn/python">Coursera</a> - Github
+        * Python Data Structures - <a target="_blank" href="https://www.coursera.org/learn/python-data">Coursera</a> - <a target="_blank" href="https://github.com/MrinmoiHossain/Online-Courses-Learning/tree/master/Coursera/Python%20Data%20Structures">Github</a>
+        * Using Python to Access Web Data - <a target="_blank" href="https://www.coursera.org/learn/python-network-data">Coursera</a> - <a target="_blank" href="https://github.com/MrinmoiHossain/Online-Courses-Learning/tree/master/Coursera/Using%20Python%20to%20Access%20Web%20Data">Github</a>
+        * Using Databases with Python - <a target="_blank" href="https://www.coursera.org/learn/python-databases">Coursera</a> - <a target="_blank" href="https://github.com/MrinmoiHossain/Online-Courses-Learning/tree/master/Coursera/Using%20Databases%20with%20Python">Github</a>
+        * Capstone: Retrieving, Processing, and Visualizing Data with Python - <a target="_blank" href="https://www.coursera.org/learn/python-data-visualization">Coursera</a> - <a target="_blank" href="https://github.com/MrinmoiHossain/Online-Courses-Learning/tree/master/Coursera/Capstone%20Retrieving%2C%20Processing%2C%20and%20Visualizing%20Data%20with%20Python">Github</a>
 
 * Go Programming Language
     * <b>Programming with Google Go - University of California, Irvine - <a target="_blank" href="https://www.coursera.org/specializations/google-golang">Coursera</a></b>
