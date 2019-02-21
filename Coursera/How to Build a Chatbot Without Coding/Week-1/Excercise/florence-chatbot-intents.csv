@@ -1,0 +1,60 @@
+Do you deliver?,delivery_info
+Do you deliver on weekends?,delivery_info
+When will I receive my flowers?,delivery_info
+Will I be able to get my flowers on Sunday?,delivery_info
+Do you deliver during the holidays?,delivery_info
+Where do you deliver?,delivery_info
+Is delivery free?,delivery_info
+How much fo delivery?,delivery_info
+How much notice for delivery?,delivery_info
+Do you provide rushed delivery?,delivery_info
+I need delivery,delivery_info
+flower suggestions,flower_suggestions
+Flower recommendations,flower_suggestions
+Recommended flowers for special occasions,flower_suggestions
+Which flowers should I buy?,flower_suggestions
+glowers for anniversaries,flower_suggestions
+What flowers should I buy for my mom?,flower_suggestions
+Which flowers for a birthday?,flower_suggestions
+bouquet for girlfriend,flower_suggestions
+Which flowers for a funeral?,flower_suggestions
+I’d like to buy flowers for a sick friend,flower_suggestions
+I want flowers that express sympathy,flower_suggestions
+What are the best flowers for Valentine’s Day?,flower_suggestions
+What would be a good arrangement to give someone when they're retiring?,flower_suggestions
+what kind of flowers,flower_suggestions
+What types of flowers make a good choice as an anniversary gift for your parents?,flower_suggestions
+bye,goodbyes
+good bye,goodbyes
+quit,goodbyes
+exit,goodbyes
+later,goodbyes
+I'm leaving,goodbyes
+stop,goodbyes
+adieu,goodbyes
+see you,goodbyes
+cya,goodbyes
+bye now,goodbyes
+farewell,goodbyes
+we are done,goodbyes
+have a nice day,goodbyes
+hello,greetings
+hi,greetings
+hey,greetings
+good morning,greetings
+good evening,greetings
+yo,greetings
+greetings,greetings
+howdy,greetings
+good day,greetings
+g'day,greetings
+what's up?,greetings
+sup,greetings
+Thank you,thank_you
+thanks,thank_you
+thank you very much,thank_you
+"alright, thanks",thank_you
+Thanks a bunch,thank_you
+much obliged,thank_you
+I owe you one,thank_you
+cheers,thank_you

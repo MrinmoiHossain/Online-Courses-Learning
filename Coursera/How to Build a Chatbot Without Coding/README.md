@@ -35,3 +35,7 @@
 - Finding and fixing problems
 - More advanced concepts
 - Analyzing chatbot conversations
+
+
+### Article - Intents, Entities, Dialog
+- https://console.bluemix.net/docs/services/assistant/entities.html#defining-entities
