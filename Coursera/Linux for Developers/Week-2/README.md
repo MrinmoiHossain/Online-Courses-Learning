@@ -1,0 +1,11 @@
+### Text Editor
+- vi
+- vim-enhanced
+- vim-X11
+- emacs
+- xemacs
+- nano
+- gedit
+- KWrite
+- kate
+- nedit
