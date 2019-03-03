@@ -36,14 +36,15 @@
         * Concurrency in Go - <a target="_blank" href="https://www.coursera.org/learn/golang-concurrency">Coursera</a> - <a target="_blank" href="https://github.com/MrinmoiHossain/Online-Courses-Learning/tree/master/Coursera/Concurrency%20in%20Go">Github</a>
 
 * MATLAB Programming Language
-    * <b>Introduction to Programming with MATLAB - Vanderbilt University</b>
+    * <b>Introduction to Programming with MATLAB - Vanderbilt University - <a target="_blank" href="https://www.coursera.org/learn/matlab">Coursera</a> - <a target="_blank" href="https://github.com/MrinmoiHossain/Online-Courses-Learning/tree/master/Coursera/Introduction%20to%20Programming%20with%20MATLAB">Github</a></b>
 
 * JavaScript Programming Language
-    * <b>Introduction to Computer Programming - University of London</b>
+    * <b>Introduction to Computer Programming - University of London - <a target="_blank" href="https://www.coursera.org/learn/introduction-to-computer-programming">Coursera</a> - <a target="_blank" href="https://github.com/MrinmoiHossain/Online-Courses-Learning/tree/master/Coursera/Introduction%20to%20Computer%20Programming">Github</a></b>
 
 ### Operating System
-* <b>Open Source Software Development, Linux and Git - The Linux Foundation</b>
-    * Open Source Software Development Methods
+* <b>Open Source Software Development, Linux and Git - The Linux Foundation - <a target="_blank" href="https://www.coursera.org/specializations/oss-development-linux-git">Coursera</a></b>
+    * Open Source Software Development Methods - <a target="_blank" href="https://www.coursera.org/learn/open-source-software-development-methods">Coursera</a> - <a target="_blank" href="https://github.com/MrinmoiHossain/Online-Courses-Learning/tree/master/Coursera/Open%20Source%20Software%20Development%20Methods">Github</a>
+    * Linux for Developers - <a target="_blank" href="https://www.coursera.org/learn/linux-for-developers">Coursera</a> - <a target="_blank" href="https://github.com/MrinmoiHossain/Online-Courses-Learning/tree/master/Coursera/Linux%20for%20Developers">Github</a>
 
 
 ## Mechanical Engineering
