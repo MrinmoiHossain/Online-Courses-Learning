@@ -49,13 +49,15 @@
 
 ## Mechanical Engineering
 * <b>Mechanics of Materials - Georgia Institute of Technology</b>
-    * Mechanics of Materials I: Fundamentals of Stress & Strain and Axial Loading
-    * Mechanics of Materials II: Thin-Walled Pressure Vessels and Torsion
+    * Mechanics of Materials I: Fundamentals of Stress & Strain and Axial Loading - <a target="_blank" href="https://www.coursera.org/learn/mechanics-1">Coursera</a> - <a target="_blank" href="https://github.com/MrinmoiHossain/Online-Courses-Learning/tree/master/Coursera/Mechanics%20of%20Materials-I%20Fundamentals%20of%20Stress%20%26%20Strain%20and%20Axial%20Loading/CourseMaterials">Github</a>
+    * Mechanics of Materials II: Thin-Walled Pressure Vessels and Torsion - <a target="_blank" href="https://www.coursera.org/learn/mechanics2">Coursera</a> - <a target="_blank" href="https://github.com/MrinmoiHossain/Online-Courses-Learning/tree/master/Coursera/Mechanics%20of%20Materials-II%20Thin-Walled%20Pressure%20Vessels%20and%20Torsion">Github</a>
 
 ## Mathematics
 * <b>Calculus: Single Variable - University of Pennsylvania</b>
-    * Calculus: Single Variable Part 1 - Functions
-    * Calculus: Single Variable Part 2 - Differentiation
+    * Calculus: Single Variable Part 1 - Functions - <a target="_blank" href="https://www.coursera.org/learn/single-variable-calculus">Coursera</a> - Github
+    * Calculus: Single Variable Part 2 - Differentiation - <a target="_blank" href="https://www.coursera.org/learn/differentiation-calculus">Coursera</a> - Github
+    * Calculus: Single Variable Part 3 - Integration - Coursera - Github
+    * Calculus: Single Variable Part 4 - Applications - Coursera - Github
 
 ## Robotics
 * <b>An Introduction to Programming the Internet of Things (IOT) - University of California - <a target="_blank" href="https://www.coursera.org/specializations/iot">Coursera</a></b>
