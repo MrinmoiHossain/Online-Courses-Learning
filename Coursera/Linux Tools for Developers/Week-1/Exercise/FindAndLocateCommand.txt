@@ -1,0 +1,7 @@
+$ find [location] [criteria] [actions]
+
+$ find /etc -name "*.conf"
+
+$ find /etc -type d
+
+$ locate .conf
