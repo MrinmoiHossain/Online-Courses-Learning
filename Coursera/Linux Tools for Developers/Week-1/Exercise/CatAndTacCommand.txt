@@ -1,0 +1,8 @@
+$ cat <filename>
+
+$ tac file
+
+
+$ tac file1 file2 > newfile
+
+cat << EOF > <filename>
