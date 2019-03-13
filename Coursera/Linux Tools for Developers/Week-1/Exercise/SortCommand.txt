@@ -1,0 +1,13 @@
+$ sort <filename>
+
+$ cat file1 file2 | sort
+
+$ sort -r <filename>
+
+$ sort -k 3 <filename>
+
+$ sort file1 file2 | uniq > file3
+
+$ sort -u file1 file2 > file3
+
+$ uniq -c filename
