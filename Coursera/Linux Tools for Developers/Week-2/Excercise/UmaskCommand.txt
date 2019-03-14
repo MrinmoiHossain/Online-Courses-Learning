@@ -1,0 +1,3 @@
+$ umask
+
+$ umask u=r,g=rx,o=rwx

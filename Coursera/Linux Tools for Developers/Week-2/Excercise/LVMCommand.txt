@@ -1,0 +1,5 @@
+$ sudo pvdisplay | grep sd
+
+$ sudo vgdisplay | grep Name
+
+$ sudo lvdisplay | grep Path
