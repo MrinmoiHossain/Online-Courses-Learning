@@ -4,3 +4,16 @@ $ git add myfile
 $ git rm myfile --cached
 
 $ git mv oldfile newfile
+
+
+$ git branch [branch_name] [starting_point]
+
+$ git show-branch
+
+$ git branch -d devel
+
+$ git checkout devel
+
+$ diff -u file1 file2
+
+$ git diff one_commit another_commit
