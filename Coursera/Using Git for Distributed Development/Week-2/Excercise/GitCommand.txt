@@ -1,0 +1,6 @@
+$ git add myfile
+
+
+$ git rm myfile --cached
+
+$ git mv oldfile newfile
