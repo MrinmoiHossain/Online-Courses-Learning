@@ -1,0 +1,9 @@
+$ sudo yum install java-1.8.0-openjdk
+
+$ sudo yum install java-1.8.0-openjdk-devel
+
+$ sudo apt-get install default-jre default-jdk
+
+$ sudo apt-get install openjdk-8-jre openjdk--jdk
+
+$ java -version

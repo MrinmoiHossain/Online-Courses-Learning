@@ -1,0 +1,8 @@
+$ rpm -qil rpm-build | grep bin
+
+$ rpm -qil rpm | grep bin
+
+
+$ rpmbuild -ba specFile
+
+$ rpm -qR package
