@@ -45,6 +45,8 @@
 * <b>Open Source Software Development, Linux and Git - The Linux Foundation - <a target="_blank" href="https://www.coursera.org/specializations/oss-development-linux-git">Coursera</a></b>
     * Open Source Software Development Methods - <a target="_blank" href="https://www.coursera.org/learn/open-source-software-development-methods">Coursera</a> - <a target="_blank" href="https://github.com/MrinmoiHossain/Online-Courses-Learning/tree/master/Coursera/Open%20Source%20Software%20Development%20Methods">Github</a>
     * Linux for Developers - <a target="_blank" href="https://www.coursera.org/learn/linux-for-developers">Coursera</a> - <a target="_blank" href="https://github.com/MrinmoiHossain/Online-Courses-Learning/tree/master/Coursera/Linux%20for%20Developers">Github</a>
+    * Linux Tools for Developers - <a target="_blank" href="https://www.coursera.org/learn/linux-tools-for-developers">Coursera</a> - <a target="_blank" href="https://github.com/MrinmoiHossain/Online-Courses-Learning/tree/master/Coursera/Linux%20Tools%20for%20Developers">Github</a>
+    * Using Git for Distributed Development - <a target="_blank" href="https://www.coursera.org/learn/git-distributed-development">Coursera</a> - <a target="_blank" href="https://github.com/MrinmoiHossain/Online-Courses-Learning/tree/master/Coursera/Using%20Git%20for%20Distributed%20Development">Github</a>
 
 
 ## Mechanical Engineering
