@@ -1,0 +1,286 @@
+[
+    {
+        "id": "641fa4b6.a2189c",
+        "type": "inject",
+        "z": "5e957573.cf70bc",
+        "name": "solution4",
+        "topic": "",
+        "payload": "[{\"name\":\"fred\",\"age\":25,\"email\":\"fred@acmeA.inc\"},{\"name\":\"jack\",\"age\":35,\"email\":\"jack@acmeB.inc\"},{\"name\":\"jill\",\"age\":30,\"email\":\"jill@acmeC.inc\"}]",
+        "payloadType": "json",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "",
+        "x": 360,
+        "y": 820,
+        "wires": [
+            [
+                "b546e058.41d8a"
+            ]
+        ]
+    },
+    {
+        "id": "f8cfb7f4.34f198",
+        "type": "inject",
+        "z": "5e957573.cf70bc",
+        "name": "solution1",
+        "topic": "",
+        "payload": "{\"name\":\"fred\",\"age\":25,\"email\":\"fred@acme.inc\"}",
+        "payloadType": "json",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "x": 360,
+        "y": 520,
+        "wires": [
+            [
+                "7c85c310.89f17c"
+            ]
+        ]
+    },
+    {
+        "id": "5f070dd4.038504",
+        "type": "debug",
+        "z": "5e957573.cf70bc",
+        "name": "output1",
+        "active": true,
+        "console": "false",
+        "complete": "payload",
+        "x": 1000,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "ec636cf7.c9697",
+        "type": "inject",
+        "z": "5e957573.cf70bc",
+        "name": "solution2",
+        "topic": "",
+        "payload": "{\"name\":\"fred\",\"age\":25,\"email\":\"fred@acme.inc\"}",
+        "payloadType": "json",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "x": 360,
+        "y": 620,
+        "wires": [
+            [
+                "cb5db698.373f08"
+            ]
+        ]
+    },
+    {
+        "id": "3f5ec6ea.c5349a",
+        "type": "debug",
+        "z": "5e957573.cf70bc",
+        "name": "output2",
+        "active": true,
+        "console": "false",
+        "complete": "payload",
+        "x": 1000,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "460d5812.382318",
+        "type": "inject",
+        "z": "5e957573.cf70bc",
+        "name": "solution3",
+        "topic": "",
+        "payload": "[{\"name\":\"fred\",\"age\":25,\"email\":\"fred@acme.inc\"},{\"name\":\"jack\",\"age\":35,\"email\":\"jack@acme.inc\"},{\"name\":\"jill\",\"age\":30,\"email\":\"jill@acme.inc\"}]",
+        "payloadType": "json",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "",
+        "x": 360,
+        "y": 720,
+        "wires": [
+            [
+                "9ce1c735.fcab68"
+            ]
+        ]
+    },
+    {
+        "id": "68f48045.4b04c",
+        "type": "debug",
+        "z": "5e957573.cf70bc",
+        "name": "output3",
+        "active": true,
+        "console": "false",
+        "complete": "payload",
+        "x": 1000,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "d4116956.7470b8",
+        "type": "debug",
+        "z": "5e957573.cf70bc",
+        "name": "output4",
+        "active": true,
+        "console": "false",
+        "complete": "payload",
+        "x": 1000,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "b55752a2.5f02d",
+        "type": "comment",
+        "z": "5e957573.cf70bc",
+        "name": "Add solution for test 1 here",
+        "info": "",
+        "x": 700,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "4143c6c0.c326b8",
+        "type": "comment",
+        "z": "5e957573.cf70bc",
+        "name": "Add solution for test 2 here",
+        "info": "",
+        "x": 700,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "5d88c55f.7349ac",
+        "type": "comment",
+        "z": "5e957573.cf70bc",
+        "name": "Add solution for test 3 here",
+        "info": "",
+        "x": 700,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "78fc9cc3.761024",
+        "type": "comment",
+        "z": "5e957573.cf70bc",
+        "name": "Add solution for test 4 here",
+        "info": "",
+        "x": 680,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "10e68baf.73bce4",
+        "type": "comment",
+        "z": "5e957573.cf70bc",
+        "name": "ADD YOUR SOLUTIONS HERE",
+        "info": "Implement your solutions to the test scenarios.  \n\nsolution 1 should be the solution to test 1, solution 2 for test 2, etc...  \n\n**Do not** alter the names of the input nodes, as the grader relies on the set values to grade your solution.\n\n",
+        "x": 390,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "7c85c310.89f17c",
+        "type": "change",
+        "z": "5e957573.cf70bc",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.name",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 710,
+        "y": 520,
+        "wires": [
+            [
+                "5f070dd4.038504"
+            ]
+        ]
+    },
+    {
+        "id": "cb5db698.373f08",
+        "type": "change",
+        "z": "5e957573.cf70bc",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.(\t    name & \" is \" & age & \" years old\"\t)",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 690,
+        "y": 620,
+        "wires": [
+            [
+                "3f5ec6ea.c5349a"
+            ]
+        ]
+    },
+    {
+        "id": "9ce1c735.fcab68",
+        "type": "change",
+        "z": "5e957573.cf70bc",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload{\t    name: \"Age is \" & age & \" and mail address is \" & email\t}",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 690,
+        "y": 720,
+        "wires": [
+            [
+                "68f48045.4b04c"
+            ]
+        ]
+    },
+    {
+        "id": "b546e058.41d8a",
+        "type": "change",
+        "z": "5e957573.cf70bc",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "\t$join(\tpayload.(\t    name & ' works for ' & $substringAfter(email, '@')\t    \t), ', ')\t",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 670,
+        "y": 820,
+        "wires": [
+            [
+                "d4116956.7470b8"
+            ]
+        ]
+    }
+]
