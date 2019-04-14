@@ -1,3 +1,7 @@
+### Micro-controller:
+- Arduion
+- STM Nucleo
+- Z-turn Board (Z-7010, Z-7070)
 
 ### Resources:
 - Arduino - InputPullupSerial: https://www.arduino.cc/en/Tutorial/InputPullupSerial
