@@ -14,3 +14,4 @@
 - Contiki OS/RiotOS Github: https://github.com/contiki-os/contiki
 - Cooja Simulator: http://www.contiki-os.org/start.html
 - TinyOS Github: https://github.com/tinyos/tinyos-main
+- Contiki Manual: http://www.contiki-os.org/start.html
