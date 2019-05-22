@@ -1,0 +1,2 @@
+-  Wi-Fi Alliance: https://www.wi-fi.org/who-we-are
+- Anatomy of an Attack: https://www.cisco.com/c/en/us/solutions/security/ransomware-defense/index.html
