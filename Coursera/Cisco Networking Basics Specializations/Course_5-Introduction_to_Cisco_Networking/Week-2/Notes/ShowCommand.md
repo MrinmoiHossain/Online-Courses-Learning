@@ -1,0 +1,7 @@
+- show running-config
+- show interfaces
+- show arp
+- show ip route
+- show ip interface brief
+- show protocols
+- show version 
