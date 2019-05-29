@@ -39,3 +39,6 @@
 
 ### Article - Intents, Entities, Dialog
 - https://console.bluemix.net/docs/services/assistant/entities.html#defining-entities
+
+
+## Intela: https://api.intelaedu.com/lti/users/
