@@ -1,3 +1,8 @@
+### What is a Data Science
+- It is an inter-disciplinary field that uses scientific methods, processes, algorithms.
+- Systems to extract knowledge and insights from many structural and unstructured data. 
+- Data science is related to data mining, machine learning and big data. 
+
 ### Module 1 - Defining Data Science
 
 - What is Data Science?
